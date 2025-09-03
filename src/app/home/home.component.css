@@ -1,0 +1,193 @@
+/* Full page background image */
+.home {
+  min-height: 100vh; /* full screen */
+  width: 100%;
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.6), 
+      rgba(0, 0, 0, 0.6)
+    ),
+    url("https://i.fbcd.co/products/resized/resized-750-500/60-web-developer-1-3a0e1ebed49e939c19bb90618deb548b0e34e312cc7ac359d8acb71c65fcf943.jpg")
+    no-repeat center center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  padding: 20px;
+  font-family: "Poppins", sans-serif;
+}
+.changing-text {
+  color: #25e10c;
+  font-weight: 700;
+  text-shadow: 0 0 10px rgba(0,195,255,0.8);
+}
+
+.home-content {
+  max-width: 700px;
+  padding: 20px;
+  animation: fadeInUp 1.2s ease-in-out;
+}
+
+.home h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+  line-height: 1.2;
+}
+
+.home h1 span {
+  background: linear-gradient(90deg,  #ff00cc, #ffd500);
+  -webkit-background-clip: text;
+  /* -webkit-text-fill-color: transparent; */
+  font-weight: 800;
+  text-shadow:  
+               0 0 20px rgba(255, 0, 204, 0.6),
+               0 0 30px rgba(255, 213, 0, 0.5);
+  display: inline-block;
+  border-right: 3px solid #00c3ff;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typing 4s steps(20, end), blink 0.8s infinite;
+}
+
+.home p {
+  font-size: 1.2rem;
+  margin-bottom: 25px;
+  color: #f0f0f0;
+}
+
+button {
+  padding: 12px 28px;
+  background: linear-gradient(135deg, #00c3ff, #008cff);
+  border: none;
+  border-radius: 30px;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 4px 15px rgba(0, 195, 255, 0.5);
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background: white;
+  color: #008cff;
+  transform: scale(1.05);
+}
+.resume-btn {
+  display: inline-block;
+  padding: 12px 28px;
+  background: linear-gradient(135deg, #00c3ff, #008cff);
+  border-radius: 30px;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  box-shadow: 0 4px 15px rgba(0, 195, 255, 0.5);
+  transition: all 0.3s ease;
+}
+
+.resume-btn:hover {
+  background: white;
+  color: #008cff;
+  transform: scale(1.05);
+}
+
+.social-icons {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.social-icons a {
+  color: #fff;
+  font-size: 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #00c3ff;
+  transform: scale(1.2);
+  text-shadow: 0 0 12px #00c3ff;
+}
+.scroll-down {
+  width: 30px;
+  height: 30px;
+  border-left: 3px solid #fff;
+  border-bottom: 3px solid #fff;
+  transform: rotate(-45deg);
+  margin: 40px auto 0;
+  animation: bounce 1.5s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: rotate(-45deg) translateY(0); }
+  50% { transform: rotate(-45deg) translateY(10px); }
+}
+
+/* Animations */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .home h1 {
+    font-size: 2rem;
+  }
+
+  .home p {
+    font-size: 1rem;
+  }
+
+  button {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .home h1 {
+    font-size: 1.6rem;
+  }
+
+  .home p {
+    font-size: 0.9rem;
+  }
+
+  button {
+    width: 100%;
+    max-width: 280px;
+  }
+}
+
+/* Typing Effect */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* Cursor Blink */
+@keyframes blink {
+  0% {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #00c3ff;
+  }
+  100% {
+    border-color: transparent;
+  }
+}

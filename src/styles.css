@@ -1,0 +1,55 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Navbar */
+.navbar {
+  background: #222;
+  padding: 10px;
+}
+.navbar ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.navbar a {
+  color: white;
+  text-decoration: none;
+}
+.navbar a:hover {
+  color: #00c3ff;
+}
+
+/* Sections */
+section {
+  padding: 50px;
+  text-align: center;
+}
+.home {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: linear-gradient(135deg, #1d2671, #c33764);
+  color: white;
+}
+.home h1 span {
+  color: #00c3ff;
+}
+button {
+  padding: 10px 20px;
+  margin-top: 20px;
+  border: none;
+  border-radius: 8px;
+  background: #00c3ff;
+  color: white;
+  cursor: pointer;
+}
+button:hover {
+  background: white;
+  color: #00c3ff;
+}
